@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Historia</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#e9e9e9;
+}
+
+/* MENU */
+
+header{
+    background:white;
+    border-bottom:2px solid black;
+    padding:20px 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:35px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#2563eb;
+}
+
+/* TITULO */
+
+.titulo{
+    text-align:center;
+    margin-top:40px;
+    font-size:45px;
+}
+
+/* TARJETAS */
+
+.contenedor{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+
+    padding:50px;
+}
+
+.tarjeta{
+    width:300px;
+    background:white;
+    border:3px solid black;
+    border-radius:10px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.tarjeta:hover{
+    transform:scale(1.05);
+}
+
+.tarjeta img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.tarjeta h2{
+    text-align:center;
+    margin:15px;
+}
+
+.tarjeta p{
+    text-align:center;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+/* INFORMACION */
+
+.info{
+    display:none;
+    width:85%;
+    background:white;
+    margin:40px auto;
+    padding:40px;
+    border:3px solid black;
+    border-radius:10px;
+}
+
+.info img{
+    width:100%;
+    max-width:650px;
+    display:block;
+    margin:auto;
+    border-radius:10px;
+}
+
+.info h1{
+    text-align:center;
+    margin:25px 0;
+    font-size:45px;
+}
+
+.info p{
+    font-size:20px;
+    line-height:38px;
+}
+
+/* BOTON */
+
+.boton{
+    display:block;
+    width:170px;
+    margin:35px auto;
+    text-align:center;
+    background:#2563eb;
+    color:white;
+    padding:14px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.boton:hover{
+    background:#1e40af;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<header>
+
+<div class="logo">
+🎮 Level Up
+</div>
+
+<nav>
+    <a href="index.html">INICIO</a>
+    <a href="populares.html">POPULARES</a>
+    <a href="top online.html">TOP ONLINE</a>
+    <a href="top historia.html">TOP HISTORIA</a>
+</nav>
+
+</header>
+
+<!-- TITULO -->
+
+<h1 class="titulo">
+TOP JUEGOS CON MEJOR HISTORIA
+</h1>
+
+<!-- TARJETAS -->
+
+<div class="contenedor">
+
+<!-- TLOU -->
+
+<div class="tarjeta" onclick="mostrarInfo('tlou')">
+
+<img src="E:\logotipos\the.webp" width="100%">
+<h2>The Last of Us</h2>
+
+<p>
+Una historia emocional de supervivencia.
+</p>
+
+</div>
+
+<!-- RDR2 -->
+
+<div class="tarjeta" onclick="mostrarInfo('rdr2')">
+
+<img src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg">
+
+<h2>Red Dead Redemption 2</h2>
+
+<p>
+Aventura épica en el viejo oeste.
+</p>
+
+</div>
+
+<!-- RE4 -->
+
+<div class="tarjeta" onclick="mostrarInfo('re4')">
+
+<img src="E:\logotipos\res.webp" width="100%">
+<h2>Resident Evil 4</h2>
+
+<p>
+Terror, acción y supervivencia.
+</p>
+
+</div>
+
+</div>
+
+<!-- INFORMACION TLOU -->
+
+<div class="info" id="tlou">
+
+<img src="E:\logotipos\the.webp" width="100%">
+<h1>The Last of Us</h1>
+
+<p>
+
+The Last of Us es considerado uno de los videojuegos con mejor historia
+de todos los tiempos. Fue desarrollado por Naughty Dog y lanzado en 2013.
+
+<br><br>
+
+La historia sigue a Joel, un hombre que ha perdido mucho en un mundo
+destruido por una infección que transforma a las personas en criaturas peligrosas.
+Su misión es proteger a Ellie, una adolescente que podría ser la clave
+para salvar a la humanidad.
+
+<br><br>
+
+Durante el viaje, ambos personajes crean una relación muy fuerte,
+haciendo que la historia sea emocional y muy impactante para los jugadores.
+
+<br><br>
+
+📅 Lanzamiento: 2013  
+🎮 Género: Acción / Supervivencia  
+🏢 Desarrolladora: Naughty Dog  
+🌎 Multijugador: Sí  
+⭐ Reconocido por su narrativa, personajes y música.
+
+</p>
+
+<a href="#top" class="boton">VOLVER</a>
+
+</div>
+
+<!-- INFORMACION RDR2 -->
+
+<div class="info" id="rdr2">
+
+<img src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg">
+
+<h1>Red Dead Redemption 2</h1>
+
+<p>
+
+Red Dead Redemption 2 es un videojuego desarrollado por Rockstar Games
+y es famoso por tener una de las historias más profundas y realistas
+en los videojuegos.
+
+<br><br>
+
+La historia sigue a Arthur Morgan, un forajido que forma parte
+de una banda criminal en el viejo oeste. A medida que avanza el juego,
+Arthur comienza a cuestionar las decisiones de su banda y busca
+hacer lo correcto antes de que sea demasiado tarde.
+
+<br><br>
+
+El juego destaca por su enorme mundo abierto, personajes memorables,
+misiones emocionantes y un nivel de detalle impresionante.
+
+<br><br>
+
+📅 Lanzamiento: 2018  
+🎮 Género: Acción / Mundo Abierto  
+🏢 Desarrolladora: Rockstar Games  
+🌎 Multijugador: Sí  
+⭐ Famoso por su historia, gráficos y realismo.
+
+</p>
+
+<a href="#top" class="boton">VOLVER</a>
+
+</div>
+
+<!-- INFORMACION RE4 -->
+
+<div class="info" id="re4">
+
+<img src="E:\logotipos\res.webp" width="100%">
+<h1>Resident Evil 4</h1>
+
+<p>
+
+Resident Evil 4 es uno de los juegos de terror más importantes
+de la historia. Fue desarrollado por Capcom y revolucionó
+los juegos de acción y supervivencia.
+
+<br><br>
+
+La historia sigue a Leon S. Kennedy, un agente especial enviado
+a rescatar a la hija del presidente de Estados Unidos en un pueblo
+misterioso lleno de enemigos infectados.
+
+<br><br>
+
+El juego mezcla terror, acción y exploración, manteniendo
+al jugador en tensión durante toda la aventura.
+
+<br><br>
+
+📅 Lanzamiento original: 2005  
+🎮 Género: Terror / Acción  
+🏢 Desarrolladora: Capcom  
+🌎 Multijugador: No  
+⭐ Reconocido como uno de los mejores juegos de terror.
+
+</p>
+
+<a href="#top" class="boton">VOLVER</a>
+
+</div>
+
+<script>
+
+function mostrarInfo(id){
+
+    let infos = document.querySelectorAll(".info");
+
+    infos.forEach(function(info){
+        info.style.display = "none";
+    });
+
+    document.getElementById(id).style.display = "block";
+
+    window.scrollTo({
+        top: document.getElementById(id).offsetTop,
+        behavior: "smooth"
+    });
+
+}
+
+</script>
+
+</body>
+</html>
