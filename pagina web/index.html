@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Level Up</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#e8e8e8;
+}
+
+/* MENU */
+
+header{
+    background:white;
+    border-bottom:2px solid black;
+    padding:15px 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:35px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    margin-left:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#2563eb;
+}
+
+/* PORTADA */
+
+.portada{
+    background:#9fd6f5;
+    height:300px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:50px;
+}
+
+.texto h1{
+    font-size:60px;
+    color:#1d4ed8;
+    margin-bottom:20px;
+}
+
+.texto p{
+    font-size:22px;
+}
+
+.iconos{
+    font-size:90px;
+}
+
+/* TITULO */
+
+.titulo{
+    text-align:center;
+    margin-top:50px;
+    font-size:45px;
+}
+
+/* JUEGOS */
+
+.contenedor{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+
+    padding:50px;
+}
+
+.tarjeta{
+    width:300px;
+    background:white;
+    border:3px solid black;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.tarjeta:hover{
+    transform:scale(1.05);
+}
+
+.tarjeta img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.tarjeta h2{
+    text-align:center;
+    margin-top:15px;
+}
+
+.tarjeta p{
+    text-align:center;
+    padding:15px;
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+
+footer{
+    background:white;
+    text-align:center;
+    padding:20px;
+    border-top:2px solid black;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<header>
+
+<div class="logo">
+🎮 Level Up
+</div>
+
+
+<nav>
+    <a href="index.html">INICIO</a>
+    <a href="populares.html">POPULARES</a>
+    <a href="top online.html">TOP ONLINE</a>
+    <a href="top historia.html">TOP HISTORIA</a>
+</nav>
+
+
+</header>
+
+<!-- PORTADA -->
+
+<section class="portada">
+
+<div class="texto">
+    <h1>MEJORES JUEGOS</h1>
+
+    <p>
+        Descubre los videojuegos más recomendados
+        por la comunidad gamer.
+    </p>
+</div>
+
+<div class="iconos">
+🎮 👾 🤖
+</div>
+
+</section>
+
+<!-- TITULO -->
+
+<h1 class="titulo">
+JUEGOS RECOMENDADOS
+</h1>
+
+<!-- JUEGOS -->
+
+<div class="contenedor">
+
+<!-- MINECRAFT -->
+
+<div class="tarjeta">
+
+<img src="E:\logotipos\mine.webp" alt="mine" width="100%">
+
+<h2>Minecraft</h2>
+
+<p>
+Juego de construcción y aventura
+con creatividad infinita.
+</p>
+
+</div>
+
+<!-- FORTNITE -->
+
+<div class="tarjeta">
+
+<img src="E:\logotipos\fort.png" width="100%">
+
+<h2>Fortnite</h2>
+
+<p>
+Battle Royale online lleno
+de acción y eventos.
+</p>
+
+</div>
+
+<!-- GTA -->
+
+<div class="tarjeta">
+
+<img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png">
+
+<h2>GTA V</h2>
+
+<p>
+Explora una ciudad enorme
+y vive aventuras criminales.
+</p>
+
+</div>
+
+<!-- FORZA -->
+
+<div class="tarjeta">
+
+<img src="E:\logotipos\forza.jpg" width="100%">	
+
+<h2>Forza Horizon 5</h2>
+
+<p>
+Carreras rápidas con autos
+y gráficos increíbles.
+</p>
+
+</div>
+
+<!-- RDR2 -->
+
+<div class="tarjeta">
+
+<img src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg">
+
+<h2>Red Dead Redemption 2</h2>
+
+<p>
+Aventura en el viejo oeste
+con gran historia.
+</p>
+
+</div>
+
+<!-- COD -->
+
+<div class="tarjeta">
+
+<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/header.jpg">
+
+<h2>Call of Duty</h2>
+
+<p>
+Shooter competitivo lleno
+de acción online.
+</p>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+🎮 Página creada para la comunidad gamer 🎮
+
+</footer>
+
+</body>
+</html>

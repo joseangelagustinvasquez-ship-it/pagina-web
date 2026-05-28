@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Online</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#e9e9e9;
+}
+
+/* MENU */
+
+header{
+    background:white;
+    border-bottom:2px solid black;
+    padding:20px 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:35px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#2563eb;
+}
+
+/* TITULO */
+
+.titulo{
+    text-align:center;
+    margin-top:40px;
+    font-size:45px;
+}
+
+/* TARJETAS */
+
+.contenedor{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+
+    padding:50px;
+}
+
+.tarjeta{
+    width:280px;
+    background:white;
+    border:3px solid black;
+    border-radius:10px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.tarjeta:hover{
+    transform:scale(1.05);
+}
+
+.tarjeta img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+}
+
+.tarjeta h2{
+    text-align:center;
+    margin:15px;
+}
+
+.tarjeta p{
+    text-align:center;
+    padding:10px;
+    margin-bottom:15px;
+}
+
+/* INFORMACION */
+
+.info{
+    display:none;
+    width:80%;
+    background:white;
+    margin:30px auto;
+    padding:30px;
+    border:3px solid black;
+    border-radius:10px;
+}
+
+.info img{
+    width:100%;
+    max-width:500px;
+    display:block;
+    margin:auto;
+    border-radius:10px;
+}
+
+.info h1{
+    text-align:center;
+    margin:20px 0;
+}
+
+.info p{
+    font-size:20px;
+    line-height:35px;
+}
+
+/* BOTON */
+
+.boton{
+    display:block;
+    width:150px;
+    margin:30px auto;
+    text-align:center;
+    background:#2563eb;
+    color:white;
+    padding:12px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.boton:hover{
+    background:#1e40af;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<header>
+
+<div class="logo">
+🎮 Level Up
+</div>
+
+<nav>
+    <a href="index.html">INICIO</a>
+    <a href="populares.html">POPULARES</a>
+    <a href="top online.html">TOP ONLINE</a>
+    <a href="top historia.html">TOP HISTORIA</a>
+</nav>
+
+</header>
+
+<!-- TITULO -->
+
+<h1 class="titulo">
+TOP JUEGOS ONLINE
+</h1>
+
+<!-- TARJETAS -->
+
+<div class="contenedor">
+
+<!-- FORTNITE -->
+
+<div class="tarjeta" onclick="mostrarInfo('fortnite')">
+
+<img src="E:\logotipos\fort.png" width="100%">
+
+<h2>Fortnite</h2>
+
+<p>
+Battle Royale online.
+</p>
+
+</div>
+
+<!-- VALORANT -->
+
+<div class="tarjeta" onclick="mostrarInfo('valorant')">
+
+<img src="E:\logotipos\valo.webp" width="100%">
+<h2>Valorant</h2>
+
+<p>
+Shooter táctico competitivo.
+</p>
+
+</div>
+
+<!-- COD -->
+
+<div class="tarjeta" onclick="mostrarInfo('cod')">
+
+<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/header.jpg">
+
+<h2>Call of Duty</h2>
+
+<p>
+Acción online intensa.
+</p>
+
+</div>
+
+</div>
+
+<!-- INFORMACION FORTNITE -->
+
+<div class="info" id="fortnite">
+
+<img src="E:\logotipos\fort.png" width="100%">
+
+<h1>Fortnite</h1>
+
+<p>
+
+Fortnite es un videojuego online desarrollado por Epic Games.
+100 jugadores luchan para ser el último sobreviviente.
+
+<br><br>
+
+📅 Lanzamiento: 2017  
+🎮 Género: Battle Royale  
+🌎 Multijugador: Sí  
+
+</p>
+
+<a href="#top" class="boton">VOLVER</a>
+
+</div>
+
+<!-- INFORMACION VALORANT -->
+
+<div class="info" id="valorant">
+
+<img src="E:\logotipos\valo.webp" width="100%">
+<h1>Valorant</h1>
+
+<p>
+
+Valorant es un shooter táctico online desarrollado por Riot Games.
+Combina habilidades especiales con disparos competitivos.
+
+<br><br>
+
+📅 Lanzamiento: 2020  
+🎮 Género: FPS Táctico  
+🌎 Multijugador: Sí  
+
+</p>
+
+<a href="#top" class="boton">VOLVER</a>
+
+</div>
+
+<!-- INFORMACION COD -->
+
+<div class="info" id="cod">
+
+<img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/header.jpg">
+
+<h1>Call of Duty</h1>
+
+<p>
+
+Call of Duty es una saga de shooters muy famosa
+por sus modos multijugador online y partidas rápidas.
+
+<br><br>
+
+📅 Lanzamiento: 2003  
+🎮 Género: Shooter / Acción  
+🌎 Multijugador: Sí  
+
+</p>
+
+<a href="#top" class="boton">VOLVER</a>
+
+</div>
+
+<script>
+
+function mostrarInfo(id){
+
+    let infos = document.querySelectorAll(".info");
+
+    infos.forEach(function(info){
+        info.style.display = "none";
+    });
+
+    document.getElementById(id).style.display = "block";
+
+    window.scrollTo({
+        top: document.getElementById(id).offsetTop,
+        behavior: "smooth"
+    });
+
+}
+
+</script>
+
+</body>
+</html>
